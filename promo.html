@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav__title">
+                    <a class="title" href="#hero">VIPSVET</a>
+                </li>
+                <li>
+                    <a href="#first">SOZVEZDIE</a>
+                </li>
+                <li>
+                    <a href="#second">TESSERACT</a>
+                </li>
+                <li>
+                    <a href="#third">MOLECULE</a>
+                </li>
+                <li>
+                    <a href="#fours">CAMELOT</a>
+                </li>
+                <li>
+                    <a href="#fifth">GALO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>   
+    <ul class="side-menu" id="menu">
+        <li data-menuanchor="hero"><a href="#hero">1</a></li>
+        <li data-menuanchor="first"><a href="#first">1</a></li>
+        <li data-menuanchor="second"><a href="#second">2</a></li>
+        <li data-menuanchor="third"><a href="#third">3</a></li>
+        <li data-menuanchor="fours"><a href="#fours">4</a></li>
+        <li data-menuanchor="fifth"><a href="#fifth">5</a></li>
+    </ul>
+    <main class="page-main" id="fullpage">
+        <section class="section hero" data-anchor="hero">
+                <div class="card-img hero-img" id="imgHero">
+                    <div class="card-content card-content--hero">
+                        <div class="card-content--hero__text"> 
+                            <h1 class="card-header">Expensive<br> Light</h1>
+                            <p class="card-para">Для ваших проектов</p>
+                            <a class="card__link" href="#first">К галерее<span class="link-arrow"></span></a>
+                        </div>
+                        <div class="card-content--hero__img"></div>
+                    </div>        
+                </div>
+        </section>
+        <section class="section slide first" data-anchor="first">
+            <div class="card">
+                <div class="card-img card-img--first" id="img01"></div>
+                <div class="card-content">
+                    <p class="card-theme visually-hidden">Подвесной светильник</p>
+                    <h2 class="card-header">Sozvezdie</h2>
+                    <p class="card-para">Несколько сотен источников света напоминают россыпь звезд в ночном небе. 
+                        В основе сложной хаотичной структуры светильника - металлический каркас, объединяющий светодиодные лампы в единую электрическую сеть.
+                    </p>
+                    <a href="#2" class="card__link">Запросить стоимость<span class="link-arrow"></span></a>
+                    <div class="additional-info">
+                        <p class="card-theme">Дополнительное описание<span class="close"></span></p>
+                        <p class="card-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Impedit ipsum voluptatum vel, nobis odio laboriosam iusto animi,
+                            labore aliquam tempora voluptas laborum magni omnis voluptate
+                            accusantium at ea nemo. Voluptate.
+                        </p>
+                        <div class="card__photos">
+                            <img src="/media/uploads/shemu/sozvezdie__1.svg" alt="Схема Sozvezdie">
+                            <img src="/media/uploads/shemu/sozvezdie__2.svg" alt="Схема Sozvezdie">
+                            <img src="/media/uploads/shemu/sozvezdie__3.svg" alt="Схема Sozvezdie">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section slide second" data-anchor="second">
+            <div class="card">
+                <div class="card-img card-img--second" id="img02"></div>
+                <div class="card-content">
+                    <p class="card-theme visually-hidden">Подвесной светильник</p>
+                    <h2 class="card-header">Tesseract</h2>
+                    <p class="card-para">Современный дизайн в духе конструктивизма. 
+                        В основе сложной структуры светильника - металлический каркас, объединяющий несколько сотен источников света в единую электрическую сеть. 
+                        Тонкие стеклянные трубки, пронизывающие конструкцию, создают эффектный объем. 
+
+                        Собирается вручную в Москве. Каждый заказ обсуждается индивидуально.
+                    </p>
+                    <a href="#3" class="card__link">Запросить стоимость<span class="link-arrow"></span></a>
+                    <div class="additional-info">
+                        <p class="card-theme">Дополнительное описание<span class="close"></span></p>
+                        <p class="card-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Impedit ipsum voluptatum vel, nobis odio laboriosam iusto animi,
+                            labore aliquam tempora voluptas laborum magni omnis voluptate
+                            accusantium at ea nemo. Voluptate.
+                        </p>
+                        <div class="card__photos">
+                            <img src="/media/uploads/shemu/shema_tesseract-02.svg" alt="Схема TESSERACT">
+                            <img src="/media/uploads/shemu/shema_tesseract-02.svg" alt="Схема TESSERACT">
+                            <img src="/media/uploads/shemu/shema_tesseract-02.svg" alt="Схема TESSERACT">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section slide third" data-anchor="third">
+            <div class="card">
+                <div class="card-img card-img--third" id="img03"></div>
+                <div class="card-content">
+                    <p class="card-theme visually-hidden">Подвесной светильник</p>
+                    <h2 class="card-header">Molecule</h2>
+                    <p class="card-para">
+                        В основе подвесного светильника Molecule - металлический каркас, объединяющий несколько сотен источников света. 
+                        Квадратные модули соединяются между собой, образуя композиции разного размера и формы. 
+
+                        Собирается вручную под заказ от 10 дней. Каждый заказ обсуждается индивидуально.
+                    </p>
+                    <a href="#4" class="card__link">Запросить стоимость<span class="link-arrow"></span></a>
+                    <div class="additional-info">
+                        <p class="card-theme">Дополнительное описание<span class="close"></span></p>
+                        <p class="card-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Impedit ipsum voluptatum vel, nobis odio laboriosam iusto animi,
+                            labore aliquam tempora voluptas laborum magni omnis voluptate
+                            accusantium at ea nemo. Voluptate.
+                        </p>
+                        <div class="card__photos">
+                            <img src="/media/uploads/shemu/shema_tesseract-02.svg" alt="Схема TESSERACT">
+                            <img src="/media/uploads/shemu/shema_tesseract-02.svg" alt="Схема TESSERACT">
+                            <img src="/media/uploads/shemu/shema_tesseract-02.svg" alt="Схема TESSERACT">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section slide fours" data-anchor="fours">
+            <div class="card">
+                <div class="card-img card-img--fours" id="img04"></div>
+                <div class="card-content">
+                    <p class="card-theme visually-hidden">Подвесной светильник</p>
+                    <h2 class="card-header">Camelot</h2>
+                    <p class="card-para">
+                        Светильники серии CAMELOT, каркас которых состоит из сцепленных тонких проволок, будто парят под потолком, в сиянии светодиодов. 
+                        Хрустальные подвесы преломляют световые потоки. Металлический трос регулируется по длине, подстраиваясь под параметры вашего помещения.
+
+                        Может быть исполнен в любом размере и конфигурации. Собирается вручную в Москве. Каждый заказ обсуждается индивидуально.
+                    </p>
+                    <a href="#5" class="card__link">Запросить стоимость<span class="link-arrow"></span></a>
+                    <div class="additional-info">
+                        <p class="card-theme">Дополнительное описание<span class="close"></span></p>
+                        <p class="card-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Impedit ipsum voluptatum vel, nobis odio laboriosam iusto animi,
+                            labore aliquam tempora voluptas laborum magni omnis voluptate
+                            accusantium at ea nemo. Voluptate.
+                        </p>
+                        <div class="card__photos">
+                            <img src="/media/uploads/shemu/shema_tesseract-02.svg" alt="Схема TESSERACT">
+                            <img src="/media/uploads/shemu/shema_tesseract-02.svg" alt="Схема TESSERACT">
+                            <img src="/media/uploads/shemu/shema_tesseract-02.svg" alt="Схема TESSERACT">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section slide fifth" data-anchor="fifth">
+            <div class="card">
+                <div class="card-img card-img--fifth" id="img05"></div>
+                <div class="card-content">
+                    <p class="card-theme visually-hidden">Подвесной светильник</p>
+                    <h2 class="card-header">Galo</h2>
+                    <p class="card-para">
+                        Светильник выполнен из никеля. Расположенные по окружности светодиодные источники света обеспечивают яркий равномерный свет. 
+                        Доступны одиночные модели или комбинация из трех колец различного диаметра.
+                    </p>
+                    <a href="#6" class="card__link">Запросить стоимость<span class="link-arrow"></span></a>
+                    <div class="additional-info">
+                        <p class="card-theme">Дополнительное описание<span class="close"></span></p>
+                        <p class="card-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Impedit ipsum voluptatum vel, nobis odio laboriosam iusto animi,
+                            labore aliquam tempora voluptas laborum magni omnis voluptate
+                            accusantium at ea nemo. Voluptate.
+                        </p>
+                        <div class="card__photos">
+                            <img src="/media/uploads/shemu/shema_tesseract-02.svg" alt="Схема TESSERACT">
+                            <img src="/media/uploads/shemu/shema_tesseract-02.svg" alt="Схема TESSERACT">
+                            <img src="/media/uploads/shemu/shema_tesseract-02.svg" alt="Схема TESSERACT">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #0A0A0A;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+            background-color: #0A0A0A;
+        }
+
+        .fp-tableCell {
+            width: 100%;
+        }
+
+        .slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .card {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            background: #ffffff;
+        }
+
+        .card-img {
+            width: 50%;
+            height: 100%;
+
+            background-size: 110% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            -webkit-animation: Gradient 140s linear infinite;
+            -moz-animation: Gradient 140s linear infinite;
+            animation: Gradient 140s linear infinite;
+        }
+
+        .hero-img {
+            width: 100%;
+        }
+
+        @-webkit-keyframes Gradient {
+            0% {
+                background-position: 0% 100%
+            }
+
+            50% {
+                background-position: 100% 100%
+            }
+
+            100% {
+                background-position: 0% 100%
+            }
+        }
+
+        @-moz-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 100%
+            }
+
+            50% {
+                background-position: 100% 100%
+            }
+
+            100% {
+                background-position: 0% 100%
+            }
+        }
+
+        .card-img--first {
+            background-color: #F08080;
+            background: url('images/sozvezdie.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .card-img--second  {
+            background-color: #FF6347;
+            background: url('images/tesseract.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .card-img--third  {
+            background-color: #FFFACD;
+            background: url('images/molecule.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .card-img--fours  {
+            background-color: #FFFACD;
+            background: url('images/camelot.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .card-img--fifth  {
+            background-color: #FFFACD;
+            background: url('images/galo.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .hero-img  {
+            background-color: #FFFACD;
+            background: url('images/sozvezdie.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;  
+        }
+
+        .card-content {
+            position: relative;
+
+            padding: 18% 230px;
+            box-sizing: border-box;
+            width: 50%;
+
+            background: #0A0A0A;
+        }
+
+        .card-content--hero {
+            top: 0%;
+            left: 0%;
+            bottom: 0%;
+
+            display: flex;
+            height: 100%;
+            width: 100%;
+            padding: 15% 15%;
+            padding-right: 0%;
+
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .card-content--hero__text {
+            width: 50%;
+        }
+
+        .card-content--hero__img {
+            width: 50%;
+
+            background-image: url('images/hero.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .card-content--hero h1 {
+            font-size: 75px;
+            color: #ffffff;
+            text-transform: capitalize;
+        }
+
+        .card-content--hero .card-para {
+            color: #676767;
+        }
+
+        .card-theme {
+            font-weight: 900;
+            font-size: 1.7vmin;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 10px;
+            color: grey;
+        }
+
+        .card-header {
+            margin: 3vmin 0 3.5vmin;
+
+            font-weight: 700;
+            font-size: 75px;
+            text-transform: capitalize;
+            line-height: 1;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card-para {
+            margin-bottom: 2.5vmin;
+            width: 95%;
+            font-size: 21px;
+            line-height: 1.5;
+            font-weight: 300;
+            color: #9b9b9b;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card__link {
+            display: block;
+            position: relative;
+            margin-top: 10em;
+
+            color: #ffffff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .link-arrow {
+            content: '';
+            position: relative;
+            top: -12px;
+
+            display: block;
+            width: 25px;
+            height: 2px;
+
+            background-color: #ffffff;
+            z-index: 0;
+
+            transition: 0.3s linear;
+        }
+
+        .card-content .link-arrow {
+            right: -235px;
+            top: -10px;
+        }
+
+        .card-content--hero .link-arrow{
+            right: -115px;
+        }
+
+        .link-arrow::after {
+            content: '';
+            position: absolute;
+            right: -2px;
+            top: -2px;
+
+            height: 2px;
+            width: 10px;
+
+            transform: rotate(30deg);
+            background-color: inherit;
+
+            z-index: 1;
+        }
+
+        .link-arrow::before {
+            content: '';
+            position: absolute;
+            right: -2px;
+            top: 2px;
+
+            height: 2px;
+            width: 10px;
+
+            transform: rotate(-30deg);
+            background-color: inherit;
+
+            z-index: 1;
+        }
+
+        .card__link:hover .link-arrow {
+            width: 120px;
+            height: 2px;
+        }
+
+        .additional-info {
+            position: absolute;
+            top: 20%;
+            right: -1500px;
+
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            padding-left: 0;
+            padding-right: 0;
+
+            background-color: rgba(0, 0, 0, 0.95);
+
+            transition: 0.9s ease;
+        }
+
+        .card__photos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card__photos img {
+            height: 250px;
+            width: 25%;
+        }
+
+        .additional-info p,
+        .additional-info h2 {
+            padding-left: 50px;
+        }
+
+        .additional-info .card-theme {
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: -10px;
+            right: 100px;
+
+            display: block;
+            width: 50px;
+            height: 50px;
+
+            cursor: pointer;
+        }
+
+        .close::after {
+            position: absolute;
+            content: '';
+            top: 22px;
+            right: 13px;
+
+            display: block;
+
+            width: 24px;
+            height: 2px;
+            transform: rotate(-45deg);
+            transition: 0.9s ease;
+            background-color: #ffffff;
+
+
+        }
+
+        .close:before {
+            position: absolute;
+            content: '';
+            top: 22px;
+            right: 13px;
+
+            display: block;
+            width: 24px;
+            height: 2px;
+
+            transform: rotate(45deg);
+
+            background-color: #ffffff;
+        }
+
+        .additional-info.open {
+            right: -0px;
+        }
+
+        .main-nav {
+            position: fixed;
+
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 3em;
+            padding-left: 0; 
+
+            list-style: none;
+            z-index: 999;
+        }
+
+        .main-nav li,
+        .main-nav li a {
+            width: 7%;
+            padding: 20px;
+
+            text-transform: uppercase;
+            cursor: pointer;
+            color: #9b9b9b;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .main-nav li:hover,
+        .main-nav li a:hover {
+            color: #ffffff;
+        }
+
+        .main-nav li a:focus {
+            color: #ffffff;
+        }
+
+        .main-nav li .title {
+            padding-left: 0;
+
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            text-align: left;
+
+            z-index: 999;
+        }
+
+        .main-nav li.main-nav__title {
+            padding-top: 0px;
+            padding-left: 15%;
+            flex-grow: 1;
+        }
+
+        /*  */
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            border: 0;
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
+
+        .side-menu {
+            position: fixed;
+            left: 14%;
+            bottom: 3%;
+
+            display: block;
+            margin: 0;
+            padding: 0;
+            width: 300px;
+
+            z-index: 1;
+            text-align: left;
+        }
+    
+        .side-menu li {
+            display: inline-block;
+            margin: 10px;
+
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            border: 0px solid #000000;
+            color: #000;
+            
+            transition: all 0.4s ease;
+        }
+
+        .side-menu li:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    
+        /*Стиль ссылки когда активен соответствующий блок*/
+        .side-menu li a, .side-menu li.active a {
+            display: block;
+            padding: 4px 4px;
+            
+            text-decoration: none;
+            color:#ccc;
+            font-size: 0px;
+        }
+    
+        /*Стиль элемента списка когда активен соответствующий блок*/
+        .side-menu li.active {
+            background: rgba(255, 255, 255, 1);
+            border: 0px solid #ffffff;
+            color: #ffffff;
+        }
+       
+        @media (max-width: 1300px) {
+            .card-img {
+                width: 50%;
+                height: 100%;
+             
+                -webkit-animation: Gradient 180s linear infinite;
+                -moz-animation: Gradient 180s linear infinite;
+                animation: Gradient 180s linear infinite;
+            }
+
+            .card-img.hero-img {
+                width: 100%;
+            }
+
+            .card-header {
+                font-size: 56px;
+            }
+
+            .main-nav li {
+                width: 10%;
+            }
+
+            .close {
+                right: 15px;
+            }
+
+            .main-nav li a {
+                font-size: 14px;
+                color: #ffffff;
+            }
+
+            .main-nav {
+                margin-top: 1em;
+            }
+
+            .main-nav li.main-nav__title {
+                padding-top: 10px;
+            }
+
+            .card-content--hero h1 {
+                font-size: 56px;
+            }
+
+            .side-menu {
+                width: 50px;
+                bottom: 10%;
+            }
+
+            .card-content {
+                padding: 20% 5%;
+            }
+            
+        }
+        @media (max-width: 1023px) {
+            .card-img {
+                width: 50%;
+                height: 100%;
+             
+                background-size: cover;
+                -webkit-animation:none;
+                -moz-animation: none;
+                animation: none;
+            }
+        }
+
+        @media(max-width: 765px) {
+            .side-menu {
+                bottom: 3%;
+                left: 2%;
+            }
+
+            .main-nav li {
+                display: none;
+            }
+
+            .main-nav li.main-nav__title {
+                display: block;
+            }
+
+            .card-header {
+                font-size: 24px;
+            }
+            .card-content--hero .card-header {
+                font-size: 46px;
+                margin: 0;
+                margin-top: 150px;
+                margin-bottom: 50px;
+            }
+
+            .card {
+                flex-direction: column;
+            }
+
+            .card-img {
+                width: 100%;
+                height: 40%;
+                background-position: center;
+            }
+
+            .card-content {
+                width: 100%;
+                height: 60%;
+                padding: 2% 5%;
+                padding-left: 15%; 
+            }
+
+            .card-content--hero__img {
+                display: none;
+            }
+
+            .card-content--hero {
+                height: 100%;
+            }
+
+            .hero-img {
+                height: 100%;
+            }
+
+            .card-para {
+                font-size: 14px;
+            }
+
+            .card__link {
+                margin: 20px 0;
+                font-size: 14px;
+            }
+
+            .additional-info {
+                top: 4%;
+                height: 100%;
+            }
+
+            .card__photos {
+                display: none;
+            }
+
+            .card-content--hero__text {
+                width: 100%;
+            }
+
+            .card__link:hover .link-arrow {
+                width: 50px;
+            }
+        }
+    </style>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/onscreen/dist/on-screen.umd.min.js"></script>
+    <script type="text/javascript">
+        // Закрытие описания товара
+        var closeAdditional = function () {
+            $('.additional-info').removeClass('open');
+        }
+        // Открытие описания товара
+        $('.card__link').on('click', function () {
+            $(this).next().addClass('open');
+        });
+        // Закрытие по нажатию
+        $('.close').on('click', function () {
+            closeAdditional();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                anchors: ['hero','first', 'second', 'third', 'fours', 'fifth'],
+                menu: '#menu',
+                css3: true,
+                scrollingSpeed: 600
+            });
+        });
+    </script>
+</body>
+</html>
