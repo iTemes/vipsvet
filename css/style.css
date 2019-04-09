@@ -1,0 +1,632 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0A0A0A;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: #0A0A0A;
+}
+
+.fp-tableCell {
+    width: 100%;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #ffffff;
+}
+
+.card-img {
+    width: 50%;
+    height: 100%;
+
+    background-size: 110% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    -webkit-animation: Gradient 140s linear infinite;
+    -moz-animation: Gradient 140s linear infinite;
+    animation: Gradient 140s linear infinite;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 100%
+    }
+
+    50% {
+        background-position: 100% 100%
+    }
+
+    100% {
+        background-position: 0% 100%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 100%
+    }
+
+    50% {
+        background-position: 100% 100%
+    }
+
+    100% {
+        background-position: 0% 100%
+    }
+}
+
+.card-img--first {
+    background-color: #F08080;
+    background: url('../images/sozvezdie.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-img--second {
+    background-color: #FF6347;
+    background: url('../images/tesseract.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-img--third {
+    background-color: #FFFACD;
+    background: url('../images/molecule.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-img--fours {
+    background-color: #FFFACD;
+    background: url('../images/camelot.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-img--fifth {
+    background-color: #FFFACD;
+    background: url('../images/galo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-img {
+    background-color: #FFFACD;
+    background: url('../images/sozvezdie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-content {
+    position: relative;
+
+    padding: 18% 230px;
+    box-sizing: border-box;
+    width: 50%;
+
+    background: #0A0A0A;
+}
+
+.card-content--hero {
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 15% 15%;
+    padding-right: 0%;
+
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.card-content--hero__text {
+    width: 50%;
+}
+
+.card-content--hero__img {
+    width: 50%;
+
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card-content--hero h1 {
+    font-size: 75px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.card-content--hero .card-para {
+    color: #676767;
+}
+
+.card-theme {
+    font-weight: 900;
+    font-size: 1.7vmin;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 10px;
+    color: grey;
+}
+
+.card-header {
+    margin: 3vmin 0 3.5vmin;
+
+    font-weight: 700;
+    font-size: 75px;
+    text-transform: capitalize;
+    line-height: 1;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-para {
+    margin-bottom: 2.5vmin;
+    width: 95%;
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #9b9b9b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card__link {
+    display: block;
+    position: relative;
+    margin-top: 10em;
+
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.link-arrow {
+    content: '';
+    position: relative;
+    top: -12px;
+
+    display: block;
+    width: 25px;
+    height: 2px;
+
+    background-color: #ffffff;
+    z-index: 0;
+
+    transition: 0.3s linear;
+}
+
+.card-content .link-arrow {
+    right: -235px;
+    top: -10px;
+}
+
+.card-content--hero .link-arrow {
+    right: -115px;
+}
+
+.link-arrow::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: -2px;
+
+    height: 2px;
+    width: 10px;
+
+    transform: rotate(30deg);
+    background-color: inherit;
+
+    z-index: 1;
+}
+
+.link-arrow::before {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: 2px;
+
+    height: 2px;
+    width: 10px;
+
+    transform: rotate(-30deg);
+    background-color: inherit;
+
+    z-index: 1;
+}
+
+.card__link:hover .link-arrow {
+    width: 120px;
+    height: 2px;
+}
+
+.additional-info {
+    position: absolute;
+    top: 20%;
+    right: -1500px;
+
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    padding-left: 0;
+    padding-right: 0;
+
+    background-color: rgba(0, 0, 0, 0.95);
+
+    transition: 0.9s ease;
+}
+
+.card__photos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card__photos img {
+    height: 250px;
+    width: 25%;
+}
+
+.additional-info p,
+.additional-info h2 {
+    padding-left: 50px;
+}
+
+.additional-info .card-theme {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: -10px;
+    right: 100px;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+}
+
+.close::after {
+    position: absolute;
+    content: '';
+    top: 22px;
+    right: 13px;
+
+    display: block;
+
+    width: 24px;
+    height: 2px;
+    transform: rotate(-45deg);
+    transition: 0.9s ease;
+    background-color: #ffffff;
+
+
+}
+
+.close:before {
+    position: absolute;
+    content: '';
+    top: 22px;
+    right: 13px;
+
+    display: block;
+    width: 24px;
+    height: 2px;
+
+    transform: rotate(45deg);
+
+    background-color: #ffffff;
+}
+
+.additional-info.open {
+    right: -0px;
+}
+
+.main-nav {
+    position: fixed;
+
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3em;
+    padding-left: 0;
+
+    list-style: none;
+    z-index: 999;
+}
+
+.main-nav li,
+.main-nav li a {
+    width: 7%;
+    padding: 20px;
+
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #9b9b9b;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.main-nav li:hover,
+.main-nav li a:hover {
+    color: #ffffff;
+}
+
+.main-nav li a:focus {
+    color: #ffffff;
+}
+
+.main-nav li .title {
+    padding-left: 0;
+
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: left;
+
+    z-index: 999;
+}
+
+.main-nav li.main-nav__title {
+    padding-top: 0px;
+    padding-left: 15%;
+    flex-grow: 1;
+}
+
+/*  */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.side-menu {
+    position: fixed;
+    left: 14%;
+    bottom: 3%;
+
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+
+    z-index: 1;
+    text-align: left;
+}
+
+.side-menu li {
+    display: inline-block;
+    margin: 10px;
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    border: 0px solid #000000;
+    color: #000;
+
+    transition: all 0.4s ease;
+}
+
+.side-menu li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/*Стиль ссылки когда активен соответствующий блок*/
+.side-menu li a,
+.side-menu li.active a {
+    display: block;
+    padding: 4px 4px;
+
+    text-decoration: none;
+    color: #ccc;
+    font-size: 0px;
+}
+
+/*Стиль элемента списка когда активен соответствующий блок*/
+.side-menu li.active {
+    background: rgba(255, 255, 255, 1);
+    border: 0px solid #ffffff;
+    color: #ffffff;
+}
+
+@media (max-width: 1300px) {
+    .card-img {
+        width: 50%;
+        height: 100%;
+
+        -webkit-animation: Gradient 180s linear infinite;
+        -moz-animation: Gradient 180s linear infinite;
+        animation: Gradient 180s linear infinite;
+    }
+
+    .card-img.hero-img {
+        width: 100%;
+    }
+
+    .card-header {
+        font-size: 56px;
+    }
+
+    .main-nav li {
+        width: 10%;
+    }
+
+    .close {
+        right: 15px;
+    }
+
+    .main-nav li a {
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+    .main-nav {
+        margin-top: 1em;
+    }
+
+    .main-nav li.main-nav__title {
+        padding-top: 10px;
+    }
+
+    .card-content--hero h1 {
+        font-size: 56px;
+    }
+
+    .side-menu {
+        width: 50px;
+        bottom: 10%;
+    }
+
+    .card-content {
+        padding: 20% 5%;
+    }
+
+}
+
+@media (max-width: 1023px) {
+    .card-img {
+        width: 50%;
+        height: 100%;
+
+        background-size: cover;
+        -webkit-animation: none;
+        -moz-animation: none;
+        animation: none;
+    }
+}
+
+@media(max-width: 765px) {
+    .side-menu {
+        bottom: 3%;
+        left: 2%;
+    }
+
+    .main-nav li {
+        display: none;
+    }
+
+    .main-nav li.main-nav__title {
+        display: block;
+    }
+
+    .card-header {
+        font-size: 24px;
+    }
+
+    .card-content--hero .card-header {
+        font-size: 46px;
+        margin: 0;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 40%;
+        background-position: center;
+    }
+
+    .card-content {
+        width: 100%;
+        height: 60%;
+        padding: 2% 5%;
+        padding-left: 15%;
+    }
+
+    .card-content--hero__img {
+        display: none;
+    }
+
+    .card-content--hero {
+        height: 100%;
+    }
+
+    .hero-img {
+        height: 100%;
+    }
+
+    .card-para {
+        font-size: 14px;
+    }
+
+    .card__link {
+        margin: 20px 0;
+        font-size: 14px;
+    }
+
+    .additional-info {
+        top: 4%;
+        height: 100%;
+    }
+
+    .card__photos {
+        display: none;
+    }
+
+    .card-content--hero__text {
+        width: 100%;
+    }
+
+    .card__link:hover .link-arrow {
+        width: 50px;
+    }
+}
